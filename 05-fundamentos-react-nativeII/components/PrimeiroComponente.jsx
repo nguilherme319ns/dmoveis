@@ -1,9 +1,12 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-export default function PrimeiroComponente () {
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-    return {
-
-    }
-
+export default function PrimeiroComponente() {
+  return (
+    <View>
+      <Text>PrimeiroComponente</Text>
+    </View>
+  )
 }
+
+const styles = StyleSheet.create({})
