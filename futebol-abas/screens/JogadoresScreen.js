@@ -6,27 +6,27 @@ const jogadores = [
   {
     nome: "Lucas Moura",
     numero: 7,
-    imagem: "https://s2-ge.glbimg.com/3m-1CWEEfQo2zYo9TfNd-EoN2oo=/0x0:1080x1350/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7f5a5957dbaa4d0e8b902ded3d14f5a6/internal_photos/bs/2023/N/2/YKUhn9QpGnhntf3OdtIg/lucas.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ8tv8hi5NKk_oj10pUADC5oGo_nq31XWv2Ir3PMwP9m3ZEr3M3uJD1chw32KP5oXmoE3Kd6-IQqrHgywE"
   },
   {
     nome: "Calleri",
     numero: 9,
-    imagem: "https://conteudo.imguol.com.br/c/esporte/0f/2023/09/17/jonathan-calleri-do-sao-paulo-em-partida-contra-o-coritiba-1694989812775_v2_450x450.jpg"
+    imagem: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/GettyImages-1497032501-e1686268569381.jpg?w=1200&h=1200&crop=1"
   },
   {
     nome: "Luciano",
     numero: 10,
-    imagem: "https://i.pinimg.com/474x/b5/6b/c3/b56bc36508d7d7fca13c35dbe352a949.jpg"
+    imagem: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRguFe8FHasHhMGRfhG6mH2wY7IGMmxiPf4x_b27tcIQl0W889hEBeNohVNJEisyDSxQvYP6Fevf2VMwG8Oc2aqlQ"
   },
   {
-    nome: "Rafinha",
-    numero: 13,
-    imagem: "https://www.saopaulofc.net/media/24193/rafinha.png"
+    nome: "Kaká",
+    numero: 8,
+    imagem: "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2017/10/15/59e2d914397c8.jpeg"
   },
   {
     nome: "Arboleda",
     numero: 5,
-    imagem: "https://www.saopaulofc.net/media/24184/arboleda.png"
+    imagem: "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0809%2Fr1208394_2_1296x729_16%2D9.jpg"
   },
 ];
 

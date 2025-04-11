@@ -23,7 +23,7 @@ export default function App() {
               return <Icon name={iconName} size={size} color={color} />;
             },
             tabBarActiveTintColor: 'red',
-            tabBarInactiveTintColor: 'gray',
+            tabBarInactiveTintColor: 'black',
           })}
         >
           <Tab.Screen name="Escudo" component={EscudoScreen} />
