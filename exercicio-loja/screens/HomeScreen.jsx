@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, TouchableOpacity, View, StyleSheet, StatusBar } from 'react-native';
-import { Card, Text } from 'react-native-paper';
+import { Card, Text, ActivityIndicator } from 'react-native-paper';
 import axios from 'axios';
 
-export default function HomeScreen({ navigation }) {
-  const [categorias, setCategorias] = useState([]);
+const categoriasStreetwear = [
+  { slug: 'mens-shoes', nome: 'Tênis' },
+  { slug: 'mens-shirts', nome: 'Camisetas' },
+  { slug: 'mens-watches', nome: 'Relógios' },
+  { slug: 'sunglasses', nome: 'Óculos' },
+  { slug: 'tops', nome: 'Roupas Femininas' },
+  { slug: 'womens-bags', nome: 'Bolsas Femininas' },
+];
 
-  useEffect(() => {
-    axios.get('https://dummyjson.com/products/categories')
-      .then(response => {
-        const categoriasComSlug = response.data.map(cat => ({
-          name: cat.charAt(0).toUpperCase() + cat.slice(1),
-          slug: cat
-        }));
-        setCategorias(categoriasComSlug);
-      })
-      .catch(error => console.error(error));
-  }, []);
+export default function HomeScreen({ navigation }) {
+  const [loading, setLoading] = useState(false); // Simula carregamento se quiser futuramente
 
   const renderItem = ({ item }) => (
     <TouchableOpacity onPress={() => navigation.navigate('Produtos', { categoria: item.slug })}>
       <Card style={styles.card}>
         <Card.Content>
-          <Text style={styles.cardText}>{item.name}</Text>
+          <Text style={styles.text}>{item.nome}</Text>
         </Card.Content>
       </Card>
     </TouchableOpacity>
@@ -31,13 +28,16 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#111" />
-      <Text style={styles.title}>Categorias</Text>
-      <FlatList
-        data={categorias}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.slug}
-        contentContainerStyle={styles.list}
-      />
+      {loading ? (
+        <ActivityIndicator style={{ marginTop: 50 }} />
+      ) : (
+        <FlatList
+          data={categoriasStreetwear}
+          keyExtractor={(item) => item.slug}
+          renderItem={renderItem}
+          contentContainerStyle={styles.list}
+        />
+      )}
     </View>
   );
 }
@@ -45,38 +45,21 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111', // fundo escuro estiloso
-    paddingTop: 20,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#fff',
-    marginLeft: 20,
-    marginBottom: 10,
-    fontFamily: 'System', // fonte padrão com bold dá o efeito desejado
+    backgroundColor: '#111',
   },
   list: {
-    paddingHorizontal: 10,
-    paddingBottom: 20,
+    padding: 16,
   },
   card: {
     backgroundColor: '#1c1c1c',
-    marginVertical: 8,
-    borderRadius: 16,
+    marginBottom: 12,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#e63946', // vermelho streetwear
-    shadowColor: '#000',
-    shadowOpacity: 0.5,
-    shadowOffset: { width: 2, height: 4 },
-    shadowRadius: 4,
-    elevation: 4,
+    borderColor: '#e63946',
   },
-  cardText: {
+  text: {
     fontSize: 20,
+    color: '#fff',
     fontWeight: 'bold',
-    color: '#f1f1f1',
-    textTransform: 'uppercase',
-    letterSpacing: 1,
-  }
+  },
 });
