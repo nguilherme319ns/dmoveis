@@ -32,7 +32,7 @@ const inventoryData = {
   labels: ['Suplementos', 'Equipamentos', 'Roupas', 'Acessórios'],
   datasets: [
     {
-      data: [40, 30, 20, 10],
+      data: [40, 35, 20, 10],
     },
   ],
 };
@@ -55,7 +55,7 @@ export default function DashboardScreen() {
             color="#fff"
             style={{ marginBottom: 8 }}
           />
-          <Text style={styles.summaryNumber}>165</Text>
+          <Text style={styles.summaryNumber}>210</Text>
           <Text style={styles.summaryLabel}>Vendas no último mês</Text>
         </Card>
 
