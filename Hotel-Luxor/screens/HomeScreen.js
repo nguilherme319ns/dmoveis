@@ -5,7 +5,7 @@ import { Title, Button, Text, useTheme } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const backgroundImage = {
-  uri: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1350&q=80',
+  uri: 'https://img.freepik.com/fotos-gratis/vistas-panoramicas-da-cidade-de-dubai-iluminadas-em-um-espectro-de-neon_23-2151305371.jpg?semt=ais_hybrid&w=740',
 };
 
 export default function HomeScreen({ navigation }) {
