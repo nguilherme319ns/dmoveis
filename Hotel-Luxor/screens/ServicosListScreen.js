@@ -1,4 +1,4 @@
-// ServicosListScreen.js
+
 
 import React, { useEffect, useState } from 'react';
 import { View, FlatList, StyleSheet, Alert, Image } from 'react-native';

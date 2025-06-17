@@ -1,4 +1,3 @@
-// FuncionarioListScreen.js
 
 import React, { useState, useEffect } from 'react';
 import { View, FlatList, Alert, StyleSheet, Text } from 'react-native';

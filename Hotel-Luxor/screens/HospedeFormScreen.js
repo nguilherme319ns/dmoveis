@@ -1,4 +1,4 @@
-// HospedeFormScreen.js
+
 
 import React, { useState, useEffect } from 'react';
 import { View, ScrollView, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';

@@ -1,4 +1,3 @@
-// HomeScreen.js
 
 import React from 'react';
 import { View, StyleSheet, ImageBackground, StatusBar } from 'react-native';
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(20,0,40,0.85)', // deep purple translucent overlay
+    backgroundColor: 'rgba(20,0,40,0.85)', 
     paddingHorizontal: 28,
     justifyContent: 'center',
     alignItems: 'center',

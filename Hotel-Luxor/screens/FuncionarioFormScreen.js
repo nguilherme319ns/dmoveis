@@ -1,4 +1,3 @@
-// FuncionarioFormScreen.js
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -38,12 +37,12 @@ export default function FuncionarioFormScreen({ navigation, route }) {
   const hasErrors = () =>
     nome.trim() === '' ||
     idade.trim() === '' ||
-    cpf.trim().length !== 14 || // CPF format: 000.000.000-00
-    telefone.trim().length !== 14; // Telefone format: (00) 0000-0000
+    cpf.trim().length !== 14 
+    telefone.trim().length !== 14; 
 
   const handleSave = async () => {
     if (hasErrors()) {
-      Alert.alert('Erro', 'Por favor, preencha corretamente todos os campos obrigatórios.');
+      Alert.alert('Por favor, preencha corretamente todos os campos .');
       return;
     }
 

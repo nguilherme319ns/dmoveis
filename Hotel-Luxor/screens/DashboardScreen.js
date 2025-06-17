@@ -12,7 +12,7 @@ const reservasData = {
     {
       data: [15, 30, 25, 45, 50, 35],
       strokeWidth: 3,
-      color: () => '#00ffe7', // neon cyan
+      color: () => '#00ffe7', 
     },
   ],
   legend: ['Reservas Mensais'],
@@ -23,7 +23,7 @@ const ocupacaoData = {
   datasets: [
     {
       data: [60, 75, 80, 70, 85, 90],
-      color: () => '#ff6d00', // neon orange
+      color: () => '#ff6d00', 
     },
   ],
 };
@@ -33,7 +33,7 @@ const distribuicaoData = {
   datasets: [
     {
       data: [40, 30, 20, 10],
-      color: () => '#9d00ff', // neon purple
+      color: () => '#9d00ff', 
     },
   ],
 };
@@ -46,7 +46,7 @@ export default function DashboardScreen() {
     >
       <Title style={styles.title}>Dashboard do Hotel</Title>
 
-      {/* Cards resumo */}
+      
       <View style={styles.summaryContainer}>
         <View style={[styles.summaryCard, styles.neonCard]}>
           <View style={[styles.iconCircle, { backgroundColor: '#00ffe7' }]}>
@@ -88,7 +88,7 @@ export default function DashboardScreen() {
         </View>
       </View>
 
-      {/* Gráfico de Reservas */}
+      
       <Card style={[styles.chartCard, styles.neonCardBackground]}>
         <Card.Title
           title="Reservas Mensais"
@@ -129,7 +129,7 @@ export default function DashboardScreen() {
         </Card.Content>
       </Card>
 
-      {/* Gráfico de Ocupação */}
+     
       <Card style={[styles.chartCard, styles.neonCardBackground]}>
         <Card.Title
           title="Taxa de Ocupação (%)"
@@ -164,7 +164,7 @@ export default function DashboardScreen() {
         </Card.Content>
       </Card>
 
-      {/* Distribuição dos Tipos de Quarto */}
+      
       <Card style={[styles.chartCard, styles.neonCardBackground]}>
         <Card.Title
           title="Distribuição de Quartos"
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   container: {
     paddingVertical: 24,
     paddingHorizontal: 16,
-    backgroundColor: '#000814', // dark navy background
+    backgroundColor: '#000814', 
   },
   title: {
     fontSize: 32,
