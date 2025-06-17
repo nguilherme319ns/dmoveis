@@ -86,7 +86,7 @@ export default function FuncionarioListScreen({ navigation }) {
       <FAB
         icon="plus"
         label="Novo Funcionário"
-        onPress={() => navigation.navigate('Cadastrar Funcionário')}
+        onPress={() => navigation.navigate('Cadastrar Funcionario')}
         style={styles.fab}
         small={false}
         extended
